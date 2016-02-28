@@ -1,3 +1,3 @@
-# www.michieldegraaf.com
+kierangraham.com
 
-Running on CodeKit (https://incident57.com/codekit/)
+* Built with Jekyll, Design by @michieldegraaf
