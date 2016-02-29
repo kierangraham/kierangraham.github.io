@@ -1,6 +1,5 @@
 ---
 layout: main
-title: Kieran Graham - Swift Developer
 permalink: /
 ---
 
