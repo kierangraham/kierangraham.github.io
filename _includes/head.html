@@ -4,11 +4,11 @@
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' name='viewport'>
   <meta content='{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}' property='og:description'>
   <!-- <meta content='http://michieldegraaf.com/static/images/michieldegraaf-social-img-1.jpg' property='og:image'> -->
-  <meta content='Kieran Graham' property='og:site_name'>
-  <meta content='Kieran Graham - Swift Developer' property='og:title'>
-  <meta content='website' property='og:type'>
+  <meta content='{{ site.title }}' property='og:site_name'>
+  <meta content='{{ site.title }}' property='og:title'>
+  <!-- <meta content='website' property='og:type'> -->
   <meta content='http://kierangraham.com' property='og:url'>
-  <meta content='summary' name='twitter:card'>
+  <!-- <meta content='summary' name='twitter:card'> -->
   <meta content='http://kierangraham.com' name='twitter:url'>
   <meta content='Kieran Graham - Mobile product developer' name='twitter:title'>
   <!-- <meta content='I create interfaces, shape brands and craft things for the web. In other words I research what makes people tick, create, break and fix things, try to give design purpose and wrangle with code.' name='twitter:description'> -->
@@ -17,6 +17,7 @@
 
   <link href='/img/favicon.ico' rel='shortcut icon'>
   <link href='/img/apple-touch-icon.png' rel='apple-touch-icon'>
+  <link rel="stylesheet" href="{{ "/css/pygments-monokai.css" | prepend: site.baseurl }}">
   <link rel="stylesheet" href="{{ "/css/style.css" | prepend: site.baseurl }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 

@@ -3,7 +3,7 @@
 
 =sans-serif
   font:
-    family: 'fira-sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
+    family: 'Fira Sans', 'fira-sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
     weight: 500
 
 =serif
@@ -13,6 +13,7 @@
 =mono
   font:
     family: "Source Code Pro", "source-code-pro", "Lucida Console", Monaco, "Courier New", Courier, monospace
+    weight: 600
 
 body
   +sans-serif
@@ -20,14 +21,22 @@ body
 h1,h2,h3,h4
   +sans-serif
   font-weight: 300
-
-h1
-  margin-bottom: $spacer-16
+  margin: $spacer-16 0
 
 h2,h3,h4
-  margin-bottom: $spacer-16
   color: $text
-  +font-size(27)
 
 p
   +font-size(20)
+
+  code
+    +mono
+    +font-size(16)
+    padding: 0.25rem 0.5rem
+    background: $monokai-gray-darker
+    border-radius: 4px
+    color: white
+
+code
+  +mono
+  +font-size(12)
